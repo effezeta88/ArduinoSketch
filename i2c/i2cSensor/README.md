@@ -1,3 +1,5 @@
+##HOW it WORKS
+
 In this example we use 4 accelerometers MPU6050, they have i2c address 0x68 and 0x69,
 a real time clock DS1302, a real time clock DS1307 with i2c address 0x68,
 a barometer BMP180 i2c address 0x77.
