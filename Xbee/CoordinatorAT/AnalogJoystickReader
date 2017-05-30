@@ -1,0 +1,30 @@
+//Joystick analog pin 
+#define x A0
+#define y A1
+
+//Tresholds for send the movement
+int thu = 300;
+int thl = 300;
+int thr = 600;
+int thd = 600;
+
+
+void setup() {
+	Serial.begin(9600);
+}
+
+void loop() {
+	if (analogRead(x) > thr) {
+		Serial.print("RIGHT ");
+	}
+	else if (analogRead(x) < thl) {
+		Serial.print("LEFT ");
+	}
+	if (analogRead(y) > thd) {
+		Serial.print("DOWN ");
+	}
+	else if (analogRead(y)  < thu) {
+		Serial.print("UP ");
+	}
+	delay(300);
+}
